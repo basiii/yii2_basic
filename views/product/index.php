@@ -31,8 +31,8 @@ use yii\bootstrap\Html;
       <td><?=$data->detail?></td>
       <td><?=$data->amount?></td>
       <td>
-        <?=Html::a(Html::icon('pencil'),['update','id'=>$data->id],['class'=>''])?>
-        <?=Html::a(Html::icon('trash'),['delete','id'=>$data->id],['class'=>'','onClick'=>"return confirm('Are you sure?');"])?>
+        <?=Html::a(Html::icon('pencil'),['update','id'=>$data->id],['class'=>'btn btn-info'])?>
+        <?=Html::a(Html::icon('trash'),['delete','id'=>$data->id],['class'=>'btn btn-danger','onClick'=>"return confirm('Are you sure?');"])?>
       </td>
     </tr>
     <?php } ?>
